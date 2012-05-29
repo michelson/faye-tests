@@ -1,1 +1,1 @@
-bundle exec rackup -s goliath -E production
+bundle exec rackup -E production -p 1337
