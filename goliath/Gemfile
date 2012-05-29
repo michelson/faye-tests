@@ -1,0 +1,8 @@
+source "http://rubygems.org"
+
+gem "goliath"
+gem "faye"
+gem "faye-redis"
+gem "redis", "~> 3.0.0.rc2"
+gem "hiredis", "~> 0.4.5"
+gem "em-synchrony"
