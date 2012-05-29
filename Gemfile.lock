@@ -1,0 +1,74 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.2.8)
+    async-rack (0.5.1)
+      rack (~> 1.1)
+    cookiejar (0.3.0)
+    daemons (1.1.8)
+    em-hiredis (0.1.1)
+      hiredis (~> 0.4.0)
+    em-http-request (1.0.2)
+      addressable (>= 2.2.3)
+      cookiejar
+      em-socksify
+      eventmachine (>= 1.0.0.beta.4)
+      http_parser.rb (>= 0.5.3)
+    em-socksify (0.2.0)
+      eventmachine (>= 1.0.0.beta.4)
+    em-synchrony (1.0.1)
+      eventmachine (>= 1.0.0.beta.1)
+    eventmachine (1.0.0.beta.4)
+    faye (0.8.2)
+      cookiejar (>= 0.3.0)
+      em-http-request (>= 0.3.0)
+      eventmachine (>= 0.12.0)
+      faye-websocket (>= 0.4.0)
+      rack (>= 1.0.0)
+      yajl-ruby (>= 1.0.0)
+    faye-redis (0.1.0)
+      em-hiredis (>= 0.0.1)
+      eventmachine (>= 0.12.0)
+      yajl-ruby (>= 1.0.0)
+    faye-websocket (0.4.5)
+      eventmachine (>= 0.12.0)
+    goliath (0.9.4)
+      async-rack
+      em-synchrony (>= 1.0.0)
+      eventmachine (>= 1.0.0.beta.3)
+      http_parser.rb
+      http_router (~> 0.9.0)
+      log4r
+      multi_json
+      rack (>= 1.2.2)
+      rack-contrib
+      rack-respond_to
+    hiredis (0.4.5)
+    http_parser.rb (0.5.3)
+    http_router (0.9.7)
+      rack (>= 1.0.0)
+      url_mount (~> 0.2.1)
+    log4r (1.1.10)
+    multi_json (1.3.6)
+    rack (1.4.1)
+    rack-accept-media-types (0.9)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
+    rack-respond_to (0.9.8)
+      rack-accept-media-types (>= 0.6)
+    thin (1.3.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
+    url_mount (0.2.1)
+      rack
+    yajl-ruby (1.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  faye
+  faye-redis
+  goliath
+  thin
